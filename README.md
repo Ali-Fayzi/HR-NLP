@@ -1,83 +1,65 @@
 # HR NLP Toolkit – Employee Feedback Analysis
 
-This project provides an end-to-end Natural Language Processing (NLP) pipeline designed for Human Resources (HR) analytics, focusing on analyzing employee feedback using modern transformer-based models.
+This project provides an end-to-end **Natural Language Processing (NLP)** pipeline designed for **Human Resources (HR) analytics**, focused on analyzing employee feedback using modern transformer-based models.
 
-It performs multiple HR-relevant tasks, including:
+It performs multiple HR-relevant tasks including:
 
-<span style="height: 20px; width: 20px; background-color: #bbb; border-radius: 50%; display: inline-block;">Sentiment Analysis</span>
+- Sentiment Analysis  
+- Burnout / Stress Detection  
+- Topic Modeling (LDA / BERTopic)  
+- Summarization  
+- HR Recommendation Tags Extraction  
 
-<span style="height: 20px; width: 20px; background-color: #bbb; border-radius: 50%; display: inline-block;">Burnout / Stress Detection</span>
+---
 
-<span style="height: 20px; width: 20px; background-color: #bbb; border-radius: 50%; display: inline-block;">Topic Modeling</span>
+## 🚀 Features
 
-<span style="height: 20px; width: 20px; background-color: #bbb; border-radius: 50%; display: inline-block;">Summarization</span>
+### **1. Sentiment Analysis**
+Classifies employee feedback into:
+- Positive  
+- Neutral  
+- Negative  
 
+Useful for monitoring overall satisfaction.
 
-HR Recommendation Tags Extraction
+---
 
-The toolkit helps HR teams quickly understand employee concerns, identify areas of improvement, and generate actionable insights from raw textual feedback.
+### **2. Burnout / Stress Detection**
+Detects:
+- Stress indicators  
+- Burnout patterns  
+- Emotional exhaustion signals  
 
-🚀 Features
-1. Sentiment Analysis
+Helps HR teams react early to employee well-being issues.
 
-Uses state-of-the-art transformer models to classify employee feedback into:
+---
 
-<span style="height: 20px; width: 20px; background-color: #bbb; border-radius: 50%; display: inline-block;">Positive</span>
-
-<span style="height: 20px; width: 20px; background-color: #bbb; border-radius: 50%; display: inline-block;">Negative</span>
-
-<span style="height: 20px; width: 20px; background-color: #bbb; border-radius: 50%; display: inline-block;">Neutral</span>
-
-Useful for measuring general employee satisfaction and detecting critical feedback.
-
-2. Burnout / Stress Detection
-
-This module applies a classification model to detect:
-
-<span style="height: 20px; width: 20px; background-color: #bbb; border-radius: 50%; display: inline-block;">Stress signals</span>
-
-<span style="height: 20px; width: 20px; background-color: #bbb; border-radius: 50%; display: inline-block;">Burnout symptoms</span>
-
-<span style="height: 20px; width: 20px; background-color: #bbb; border-radius: 50%; display: inline-block;">Emotional exhaustion patterns</span>
-
-Helpful for early intervention and improving employee well-being.
-
-3. Topic Extraction (LDA / BERTopic)
-
-Automatically clusters feedback into key themes.
-Examples:
-
-<span style="height: 20px; width: 20px; background-color: #bbb; border-radius: 50%; display: inline-block;">Management issues</span>
-
-<span style="height: 20px; width: 20px; background-color: #bbb; border-radius: 50%; display: inline-block;">Workload</span>
-
-<span style="height: 20px; width: 20px; background-color: #bbb; border-radius: 50%; display: inline-block;">Compensation</span>
-
-<span style="height: 20px; width: 20px; background-color: #bbb; border-radius: 50%; display: inline-block;">Work environment</span>
+### **3. Topic Extraction (LDA / BERTopic)**
+Automatically extracts themes from all feedback, such as:
+- Management  
+- Workload  
+- Compensation  
+- Culture & Environment  
 
 Supports:
+- **LDA (scikit-learn)**
+- **BERTopic (Transformers + clustering)**
 
-<span style="height: 20px; width: 20px; background-color: #bbb; border-radius: 50%; display: inline-block;">LDA (Latent Dirichlet Allocation)</span>
+---
 
-<span style="height: 20px; width: 20px; background-color: #bbb; border-radius: 50%; display: inline-block;">BERTopic (Transformers + clustering)</span>
+### **4. Summarization**
+Uses transformer-based summarizers to convert long feedback into short, meaningful summaries.  
+Great for HR dashboards and reports.
 
+---
 
+### **5. HR Recommendation Tags**
+Assigns automated HR tags like:
+- Workload Concern  
+- Burnout Risk  
+- Low Morale  
+- Positive Culture  
 
-4. Summarization
+Provides fast categorization and prioritization.
 
-Generates short, meaningful summaries from long feedback text using transformer summarization pipelines.
-Ideal for HR reports, dashboards, and executive summaries.
-
-5. HR Recommendation Tags
-
-Automatically assigns HR-related tags such as:
-
-<span style="height: 20px; width: 20px; background-color: #bbb; border-radius: 50%; display: inline-block;">Training Needed</span>
-
-<span style="height: 20px; width: 20px; background-color: #bbb; border-radius: 50%; display: inline-block;">Low Morale</span>
-
-<span style="height: 20px; width: 20px; background-color: #bbb; border-radius: 50%; display: inline-block;">Team Conflict</span>
-
-<span style="height: 20px; width: 20px; background-color: #bbb; border-radius: 50%; display: inline-block;">Workload Concern</span>
-
-Enables fast prioritization and categorization.
+---
